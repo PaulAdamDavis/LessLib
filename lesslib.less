@@ -124,6 +124,13 @@
 	-ms-transition: all @duration @ease;
 	transition: all @duration @ease;
 }
+.no-transition() {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
 .rotate(@deg:5deg){
 	-webkit-transform: rotate(@deg);
 	-moz-transform: rotate(@deg);
