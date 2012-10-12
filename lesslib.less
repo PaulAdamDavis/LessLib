@@ -1,13 +1,4 @@
 /*****
-	TODO
-	
-	* Add browser compabilities to each mixin
-	* Add more mixins from other libs that I would use
-	* Add button mixin, a port of Maykel Loomans button class for SASS (Lovely buttons)
-	
-*****/
-
-/*****
 	LAYOUT
 *****/
 .clearfix {
@@ -43,6 +34,7 @@
 	-moz-box-shadow: @box-vars;
 	box-shadow: @box-vars;
 }
+
 
 /*****
 	ROUNDED CORNERS
@@ -158,6 +150,41 @@
 	-ms-backface-visibility: @arguments;
 	-o-backface-visibility: @arguments;
 	backface-visibility: @arguments;
+}
+
+
+/****
+	COLUMNS
+*****/
+.column_count(@col_count: 3) {
+	-webkit-column-count: @col_count;
+	-moz-column-count: @col_count;
+	column-count: @col_count;
+}
+.column_gap(@col_gap: 20px) {
+	-webkit-column-gap: @col_gap;
+	-moz-column-gap: @col_gap;
+	column-gap: @col_gap;
+}
+.column_width(@col_width: 100px) {
+	-webkit-column-width: @col_width;
+	-moz-column-width: @col_width;
+	column-width: @col_width;
+}
+.column_rule(@col_rule: 1px) {
+	-moz-column-rule-width: @col_rule;
+	-webkit-column-rule-width: @col_rule;
+	column-rule-width: @col_rule;
+}
+.column_rule_color(@col_rule_color: #f00) {
+	-moz-column-rule-color: @col_rule_color;
+	-webkit-column-rule-color: @col_rule_color;
+	column-rule-color: @col_rule_color;
+}
+.column_span(@col_span: all) {
+	-webkit-column-span: @col_span;
+	-moz-column-span: @col_span;
+	column-span: @col_span;
 }
 
 
