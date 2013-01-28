@@ -230,3 +230,11 @@
 	height: auto !important;
 	height: @height;
 }
+.rgba_bg(@r,@g,@b,@a) {
+    @colour_string: rgba(@r,@g,@b,@a);
+    @ie: argb(@colour_string);
+    -ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ie},endColorstr=@{ie})";
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ie},endColorstr=@{ie})";
+    zoom: 1;
+    background: @colour_string;
+}
