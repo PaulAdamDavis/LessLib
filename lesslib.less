@@ -171,7 +171,12 @@
 	-moz-column-width: @col_width;
 	column-width: @col_width;
 }
-.column_rule(@col_rule: 1px) {
+.column_rule(@col_rule: 1px solid red) {
+	-moz-column-rule: @col_rule;
+	-webkit-column-rule: @col_rule;
+	column-rule: @col_rule;
+}
+.column_rule_width(@col_rule: 1px) {
 	-moz-column-rule-width: @col_rule;
 	-webkit-column-rule-width: @col_rule;
 	column-rule-width: @col_rule;
